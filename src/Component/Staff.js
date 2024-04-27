@@ -38,7 +38,7 @@ const Staff = () =>{
         <Typography component='div' sx={{display:'flex',justifyContent:'center'}}>
           <Typography component='div' sx={{textAlign:'center',width:'50%'}}>
             <Typography component='p' sx={{color:'#eb7328'}}>OUR STAFF</Typography>
-            <Typography component='h3' variant='h3' sx={{fontWeight:'bolder'}}>Our Professional Electrician Staff</Typography>
+            <Typography component='h3' sx={{fontWeight:'bolder',fontSize:{xs:'20px',sm:'25px',md:'40px',lg:'40px',xl:'40px'}}}>Our Professional Electrician Staff</Typography>
           </Typography>
         </Typography>
         <Slider {...settings}>

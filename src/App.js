@@ -43,19 +43,27 @@ import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Animated from './Component/Animated';
 import Staff from './Component/Staff';
-// import Slider from "react-slick";
-
-
-
+import Only_img from './Component/Onlyimg';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Faq from './Component/Faq';
+import Logo_slid from './Component/Logo_slid';
+import CardActions from '@mui/material/CardActions';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import Conte from './Component/Conte';
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import GroupsIcon from '@mui/icons-material/Groups';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import Four_box from './Component/Four_box';
+import PersonIcon from '@mui/icons-material/Person';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import News from './Component/News';
 
 function App() {
-  const settingss = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
-  };
+
   return (
   <>
     <Header />
@@ -64,48 +72,12 @@ function App() {
     <Lcard />
     <Animated />
     <Staff />
-    <Typography sx={{width:'100%',position:'relative'}}>
-
-    <Typography sx={{width:'100%'}}>
-
-    <Slider {...settingss}>
-        <Typography component='div' sx={{width:'100%',overflow:'hidden'}} id='onlyimg'>
-          <Typography component='div'>
-            <img src='http://23july.hostlin.com/easton/wp-content/uploads/2022/04/project-2.jpg'></img>
-          </Typography>
-        </Typography>
-
-
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-       </Typography>
-
-       <Typography component='div' className='y'sx={{display:'flex',flexWrap:'wrap',justifyContent:'center',width:'25%',alignItems:'center'}} >
-          <Typography component='div' id='vline' sx={{width:'100%'}}></Typography>
-          <Typography component='div' id='hline' sx={{width:'100%'}}></Typography>
-          <Typography component='div' sx={{width:'100%',marginTop:'30px'}}>
-            <Typography component='h5' variant='h5' sx={{padding:'16px 32px',backgroundColor:'black',color:'white',textAlign:'center'}}>Better Performance</Typography>
-          </Typography>
-          <Typography component='div' sx={{marginTop:'30px',width:'100%'}}>
-            <Typography component='p' variant='p' sx={{backgroundColor:'black',color:'white',textAlign:'center'}}>Better Performance</Typography>
-          </Typography>
-       </Typography>
-
-       </Typography>
+    <Only_img />
+    <Faq />
+    <Logo_slid />
+    <Conte />
+    <Four_box />
+    <News />
 
   </>
   );
