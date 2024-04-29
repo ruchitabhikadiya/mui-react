@@ -541,9 +541,6 @@ animation-iteration-count: infinite;
 .news-width:hover #news_cross::before{
   background-color: #eb7328;
 }
-/* .news_arrow{
-  display: none;
-} */
 .news_content{
   color: #000;
 }
@@ -554,5 +551,542 @@ animation-iteration-count: infinite;
   color: #eb7328;
 }
  /* news end */
+
+ /* cross-two-part start */
+ .cross-two-part1{
+    left: 0px;
+    top: 0%;
+    z-index: -1;
+ }
+ .cross-two-part1 img{
+  position: absolute;
+}
+.cross-two-part2{
+  position: absolute;
+  width: 70%;
+  left: 50%;
+}
+ .cross-two-part2 img{
+  right: 0%;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 1% 100%, 10% 0%);
+}
+
+.cross-two-part1::before{
+  position: absolute;
+  content: '';
+  background: #000;
+  width: 100%;
+  height: 99%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  z-index: 9999;
+}
+#left-arrow{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.cross-two-slider{
+  width: 40% !important;
+}
+.slick-prev{
+  display: none !important;
+}
+.slick-next{
+  display: none !important;
+}
+.background_img{
+  background-image: url('https://23july.hostlin.com/easton/wp-content/uploads/2022/04/icon-3.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 999;
+}
+.cross-two-slider {
+  position: relative;
+}
+.cross-two-slider img{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+.cross-two-slid-round-img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  background-image: url('https://23july.hostlin.com/easton/wp-content/uploads/2022/04/testimonial-4.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cross-two-slid-round-img2{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  background-image: url('http://23july.hostlin.com/easton/wp-content/uploads/2022/04/testimonial-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cross-two-slid-round-img3{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  background-image: url('http://23july.hostlin.com/easton/wp-content/uploads/2022/04/testimonial-9.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cross-two-slid-round-img img{
+  width: 100%;
+}
+
+
+ /* cross-two-part end */
+
+
+ /* price table start */
+ #price{
+  position:  relative !important;
+  background-color: white;
+ }
+ #price_main{
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.10);
+  padding: 50px 20px 50px 20px;
+  position: relative;
+  z-index: 999 !important;
+  background-color: white;
+ }
+#price_table{
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 25%;
+  top:25%;
+  z-index: 999 !important;
+
+}
+#price_logo{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 33px;
+  margin-top: -55px;
+  background-color: #eb7328;
+  right: 32%;
+  top: 0px;
+  z-index: 999 !important;
+}
+.price_ani{
+  border: 1px solid gainsboro;
+}
+.price_ani::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0%;
+  width: 0%;
+  height: 100%;
+  background-color: #eb7328;
+  transition: all 0.3s ease;
+}
+.price_ani:hover::after{
+  width: 100%;
+  top: 0;
+  bottom: auto;
+}
+#p_bottom_ani::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 300px;
+left: 0;
+bottom: -25px;
+border: 1px solid gainsboro;
+}
+#p_bottom_ani:hover::after{
+  background-color: #eb7328;
+}
+.pricetable{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/shape-10.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: -70px;
+  animation-name: bulb;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  transition: 2s;
+}
+@keyframes bulb {
+  from{
+    top:-70px;
+  }
+  to{
+    top:-68px
+  }
+}
+ /* price table end */
+
+.footer{
+  background-color: #26282E;
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/icon-5.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#last_footer{
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  background-color:#26282E;
+  padding: 32px 0px
+}
+#email{
+  width: 220px;
+  height: 60px;
+  padding: 10px 20px;
+}
+#button{
+  width: 180px;
+  height: 60px;
+}
+/* .....................page start */
+.line1{
+  margin: auto !important;
+  width: 110px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: #eb7328;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+}
+.line2{
+  margin: auto !important;
+  width: 92px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: #eb7328;
+  margin-bottom: 10px !important;
+}
+.line3{
+  margin: auto !important;
+  width: 74px;
+  height: 26px;
+  border-radius: 0% 0% 50% 50%;
+  background-color: #eb7328;
+  margin-bottom: 10px !important;
+}
+#staff img{
+  margin: auto;
+  width: 90%;
+}
+/* .................page end */
+
+/*.......................... element page start */
+.page-slider{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2023/09/breadcrumb-1.jpg);
+  width: 100%;
+  background-attachment: fixed;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-slider::before{
+  position: absolute;
+  content: '';
+  background: #000;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+}
+/* slider 2 start */
+.element-slider1{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/shape-22.png);
+  position: relative;
+}
+.j{
+  /* position: relative; */
+  /* width: 100%; */
+}
+.j::after{
+    /* position: absolute;
+    content: '';
+    background: #f19d69;
+    width: calc(50% + 80px);
+    width: 100px;
+    height: 100%;
+    left: 600px; */
+    /* right: 0%; */
+    /* top: 0px;
+    opacity: 1; */
+    /* z-index: 999; */
+    /* clip-path: polygon(0% 0%, 100% 0%, 92% 15%, 95% 80%, 82% 101%, 0% 100%, 0% 80%, 0% 0%); */
+}
+.element-slider1-2{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.element-slider2-2{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.slick-next {
+  right: 49px !important;
+}
+.slick-prev {
+  left: 49px !important;
+  z-index: 1 !important;
+}
+.slider::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0px;
+  right: 0px;
+  opacity: 0.7;
+}
+.input{
+  position: relative;
+    /* display: block; */
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    color: #141417;
+    padding: 10px 10px;
+    margin: 10px;
+}
+.css-drq4i9-MuiTypography-root{
+  line-height: 65px !important;
+}
+/* slider 2 end */
+
+/* slider 3 start */
+.shape1{
+  width: 100%;
+  height: 30px;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  position: absolute;
+  /* z-index: 999; */
+  background-color: #eb7328;
+  bottom: 0%;
+}
+.shape2{
+  width: 660px;
+  height: 110px;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 0%);
+  background-color: #eb7328;
+}
+.shape3{
+  width: 715px;
+  height: 150px;
+  background-color: #eb7328;
+  opacity: 0.7;
+  position: absolute;
+  top: 0%;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 0%);
+}
+.slider1{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-1.jpg);
+  position: relative;
+  /* padding-bottom: 20px; */
+}
+.slider2{
+  background-image: url(http://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-2.jpg);
+  position: relative;
+}
+.slider3{
+  background-image: url(http://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-3.jpg);
+  position: relative;
+}
+.slick-next {
+  right: 49px !important;
+}
+.slick-prev {
+  left: 49px !important;
+  z-index: 1 !important;
+}
+.slider::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0px;
+  right: 0px;
+  opacity: 0.7;
+}
+.d{
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  clip-path: polygon(74% 65%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 90%, 27% 50%);
+  background-color: #eb7328;
+  z-index: 999;
+  bottom: 0%;
+}
+.h{
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  background: #ffffff;
+  clip-path: polygon(75% 75%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 27% 50%);
+  z-index: 999;
+  bottom: 0;
+}
+/* slider 3 end */
+
+/* slider 4 start */
+.slider4-1{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-1.jpg);
+  position: relative;
+  width: 100% !important;
+  height: 650px !important;
+}
+.slider4-2{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-5.jpg);
+  position: relative;
+  width: 100% !important;
+  height: 650px !important;
+}
+.slider4-3{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-4.jpg);
+  position: relative;
+  width: 100% !important;
+  height: 650px !important;
+}
+
+/* slider 5 start */
+.slider5-1{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-1.jpg);
+  position: relative;
+  width: 100% !important;
+  height: 520px !important;
+}
+.slider5-2{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-5.jpg);
+  position: relative;
+  width: 100% !important;
+  height: 520px !important;
+}
+.slider5-3{
+  background-image: url(https://23july.hostlin.com/easton/wp-content/uploads/2022/04/banner-4.jpg);
+  position: relative;
+  width: 100% !important;
+  height: 520px !important;
+}
+/* ..........................................element page end*/
+
+/* .................................blog start */
+#Blog_cross{
+  position: relative;
+  overflow: hidden;
+}
+
+#Blog_cross img{
+  width: 100%;
+  transform: scale(1);
+}
+.news-width:hover #Blog_cross img{
+  transform: scale(1.1);
+}
+.news-width:hover #news_cross::before{
+  background-color: #eb7328;
+}
+.news_content{
+  color: #000;
+}
+.news_content:hover .news_arrow{
+  display: block;
+}
+.news_content:hover {
+  color: #eb7328;
+}
+.box-shadow{
+  box-shadow: none !important;
+}
+.blog_cross_color{
+  background-color: white;
+  color: #000;
+}
+.blog_cross_color:hover{
+  background-color: #eb7328;
+  color: white;
+}
+
+/* .....................blog end */
+
+/* ...............contect start */
+#Blog_cross{
+  position: relative;
+  overflow: hidden;
+}
+
+#Blog_cross img{
+  width: 100%;
+  transform: scale(1);
+}
+.contect{
+  padding: 30px;
+}
+#contect-input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  /* border-color: #eb7328; */
+  width: 49.7%;
+  font-size: 20px;
+  /* margin-bottom: 40px; */
+  margin: 1px 1px 40px 1px;
+}
+#phone-input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  /* border-color: #eb7328; */
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.contect-btn{
+  padding: 20px 40px;
+  background-color: #eb7328;
+  border: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+iframe{
+  width: 100%;
+  height: 500px;
+}
+/* ...............contect end */
+
 
 

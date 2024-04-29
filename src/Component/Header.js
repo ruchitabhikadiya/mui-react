@@ -22,6 +22,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import SearchIcon from '@mui/icons-material/Search';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import Header from './Component/Header';
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -112,7 +113,7 @@ const Header = () =>{
       <AppBar position="static" style={{backgroundColor:'#faf8f5'}}>
         <Toolbar>
           <Box className='second-nev-logo' style={{backgroundColor:'#eb7328', padding:'20px'}}>
-           <img src='http://23july.hostlin.com/easton/wp-content/uploads/2022/04/footer-logo.png'></img>
+            <Link to='/'><img src='http://23july.hostlin.com/easton/wp-content/uploads/2022/04/footer-logo.png'></img></Link>
           </Box>
           <Box sx={{ flexGrow: 1 }} style={{display:'flex', justifyContent:'end'}}>
             <Typography component="ul" style={{display:'flex', justifyContent:'space-between'}}>
@@ -159,7 +160,7 @@ const Header = () =>{
               lg: 'flex',
               xl: 'flex',
             }}}>
-              <Typography className='thirdnav'><a href='' style={{color:'#eb7328 '}}>Home</a>
+              <Typography className='thirdnav'><Link to='/' style={{color:'#eb7328 '}}>Home</Link>
                 <Typography component='div' className='third-nav-drop'>
                     <Typography component='ul'>
                       <Typography component='li'><a href=''>Home Page 01</a></Typography>
@@ -174,7 +175,7 @@ const Header = () =>{
                 </Typography>
               </Typography>
               <Typography component='li' className='thirdnav'><a href=''>About</a></Typography>
-              <Typography className='thirdnav'><a href=''>Pages</a>
+              <Typography className='thirdnav'><Link to='/Page'>Pages</Link>
 
                 <Typography component='div'  className='third-nav-drop'>
                   <Typography component='ul'>
@@ -219,7 +220,7 @@ const Header = () =>{
                   </Typography>
                 </Typography>
 
-              <Typography component='li' className='thirdnav'><a href=''>Elements</a>
+              <Typography component='li' className='thirdnav'><Link to='/Element'>Elements</Link>
                 <Typography component='div' className='third-nav-drop'>
                   <Typography component='ul'>
                     <Typography component='li'><a href=''>Slider Block</a></Typography>
@@ -237,7 +238,7 @@ const Header = () =>{
                 </Typography>
               </Typography>
 
-              <Typography component='li' className='thirdnav'><a href=''>Blog</a>
+              <Typography component='li' className='thirdnav'><Link to='/Blog'>Blog</Link>
                 <Typography component='div'>
                   <Typography component='ul' className='third-nav-drop'>
                       <Typography component='li'><a href=''>Blog Grid</a></Typography>
@@ -246,7 +247,7 @@ const Header = () =>{
                   </Typography>
                 </Typography>
               </Typography>
-              <Typography component='li' className='thirdnav'><a href=''>Contact</a></Typography>
+              <Typography component='li' className='thirdnav'><Link to='/Contect'>Contact</Link></Typography>
             </Typography>
           </Typography>
           <Typography style={{color:'black', display:'flex',alignItems:'center',gap:'20px'}}>

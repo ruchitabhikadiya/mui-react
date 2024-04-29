@@ -61,12 +61,41 @@ import Four_box from './Component/Four_box';
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import News from './Component/News';
+import Footer from './Component/Footer';
+import ContentPasteIcon from '@mui/icons-material/ContentPaste';
+import BatteryStdIcon from '@mui/icons-material/BatteryStd';
+import ElectricMeterIcon from '@mui/icons-material/ElectricMeter';
+import Pricetable from './Component/Pricetable';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+// import Slider from "react-slick";
+// import { baseUrl } from "./config";
+import Element from './Pages/Element';
+import Page from './Pages/Page';
+import Blog from './Pages/Blog';
+import Contect from './Pages/Contect';
+
+import Testimonials from './Component/Testimonials';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
+  const settingssss = {
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+   
+  };
 
   return (
   <>
-    <Header />
+    {/* <Header />
     <Slid />
     <Twopart/>
     <Lcard />
@@ -75,10 +104,55 @@ function App() {
     <Only_img />
     <Faq />
     <Logo_slid />
+    <Testimonials/>
+    <Pricetable />
     <Conte />
     <Four_box />
     <News />
+    <Footer /> */}
 
+    <Router>
+      <Header/>
+      <Switch>
+
+        <Route exact path='/'>
+          <Slid />
+          <Twopart/>
+          <Lcard />
+          <Animated />
+          <Staff />
+          <Only_img />
+          <Faq />
+          <Logo_slid />
+          <Testimonials/>
+          <Pricetable />
+          <Conte />
+          <Four_box />
+          <News />
+        </Route>
+
+        <Route path='/Page'>
+          <Page/>
+        </Route>
+
+        <Route path='/Element'>
+          <Element/>
+        </Route>
+
+        <Route path='/Blog'>
+          <Blog/>
+        </Route>
+
+        <Route path='/Contect'>
+          <Contect/>
+        </Route>
+
+
+      </Switch>
+      <Footer/>
+    </Router>
+    
+    
   </>
   );
 }

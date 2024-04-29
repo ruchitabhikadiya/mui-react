@@ -34,7 +34,7 @@ const Logo_slid = () =>{
       };
     return(
     <>
-    <Typography component='div' sx={{width:'100%',marginTop:'80px'}}>
+    <Typography component='div' sx={{width:'100%',marginTop:'80px',marginBottom:'80px'}}>
         <Slider {...settingsss}>
           <Typography component='div' sx={{width:'100%',padding:'20px'}} id='logo_slid'>
             <img src='http://23july.hostlin.com/easton/wp-content/uploads/2022/05/1.png'></img>
