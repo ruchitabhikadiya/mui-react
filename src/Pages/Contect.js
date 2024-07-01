@@ -12,7 +12,7 @@ const Contect = () =>{
             </Typography>
           </Typography>
         </Typography>
-    
+     
         <Typography component='div' sx={{width:'100%',display:'flex',flexWrap:'wrap',margin:'80px 0'}}>
     
           <Typography component='div' sx={{width:{xs:"100%",sm:'100%',md:"100%",lg:'25%',xl:'25%'},padding:'20px'}}>

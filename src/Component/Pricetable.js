@@ -94,6 +94,7 @@ const Pricetable = () =>{
                             <Typography component='h6' variant='h6' sx={{display:'inline-block'}}>SELECT PLAN</Typography>
                             </Typography>
                         </Typography>
+                        
 
                         </Typography>
                     </Typography>

@@ -174,7 +174,7 @@ const Header = () =>{
                     </Typography>
                 </Typography>
               </Typography>
-              <Typography component='li' className='thirdnav'><a href=''>About</a></Typography>
+              <Typography component='li' className='thirdnav'><Link to='/About'>About</Link></Typography>
               <Typography className='thirdnav'><Link to='/Page'>Pages</Link>
 
                 <Typography component='div'  className='third-nav-drop'>

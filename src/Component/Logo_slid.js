@@ -54,7 +54,7 @@ const Logo_slid = () =>{
         </Slider>
     </Typography>
     
-    </>
+    </> 
     )
 }
 export default Logo_slid;

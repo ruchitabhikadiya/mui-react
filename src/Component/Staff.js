@@ -92,7 +92,7 @@ const Staff = () =>{
               <Typography component='p' sx={{color:'#6E6E6E'}}>His main tasks are Tests, diagnoses, and repairs various building control systems like refrigeration, heating, and air conditioning systems.</Typography>
             </Typography>
 
-          </Typography>
+          </Typography> 
           {/* 4 */}
           <Typography component='div' sx={{textAlign:'center',padding:'20px 54px'}}>
 

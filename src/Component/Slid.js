@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Container } from '@mui/material';
 
-const Slid = () =>{
+const Slid = () =>{ 
     var settings = {
         autoplay:true,
         infinite: true,

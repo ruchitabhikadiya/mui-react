@@ -102,7 +102,7 @@ const Blog = () =>{
               <Typography variant="a" sx={{fontWeight:'bold',display:'flex',alignItems:'center'}} className='news_content'>READ MORE <KeyboardArrowRightIcon sx={{color:'#eb7328',display:'none'}} className='news_arrow'/></Typography>
             </CardContent>
           </CardActionArea>
-        </Card>
+        </Card> 
 
         <Card className='news-width box-shadow' sx={{width:{xs:'calc(100% - 20px)',sm:'calc(50% - 20px)',md:'calc(33.33% - 20px)',lg:'calc(33.33% - 20px)',xl:'calc(33.33% - 20px)' },margin:'10px' }}>
           <CardActionArea>

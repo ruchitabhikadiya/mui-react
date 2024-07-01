@@ -10,7 +10,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const Animated = () =>{
     return(
-    <>
+    <> 
         <Typography component='div' sx={{width:'100%'}}>
             <Typography component='div' sx={{display:'flex',flexWrap:'wrap'}}>
                 <Typography component='div' sx={{width:{xs:'calc(100% + 285px)',sm:'calc(100% + 285px)',md:'calc(100% + 285px)',lg:'calc(50% + 285px)',xl:'calc(50% + 285px)'},position:'relative'}} id='dot-box'>

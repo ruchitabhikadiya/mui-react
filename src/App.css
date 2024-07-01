@@ -1088,5 +1088,10 @@ iframe{
 }
 /* ...............contect end */
 
+/* ...............about start */
+#About-FAQ img{
+  border:10px solid white;
+}
+
 
 

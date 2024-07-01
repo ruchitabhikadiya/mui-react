@@ -25,7 +25,7 @@ const Twopart = () =>{
               <Typography component='h3' sx={{fontSize:'25px',fontWeight:'bold'}}>Years Experience of This Field</Typography>
             </Typography>
           </Typography>
-        </Typography>
+        </Typography> 
 
         <Typography component='div' sx={{width:{xs:'100%',sm:'100%',md:'50%',lg:'50%',xl:'50%'},marginTop:'0px',}}>
           <Typography Container='div' className='relative' sx={{padding:'0px 10px', textAlign:{xs:'center',sm:'center',lg:'start',md:'start',xl:'start'}}}>

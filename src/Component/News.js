@@ -10,7 +10,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const News = () =>{
     return(
-    <>
+    <> 
     <Typography component='div' sx={{width:'100%',marginTop:'80px'}}>
       <Container>
         <Typography component='div' sx={{display:'flex',justifyContent:'center'}}>

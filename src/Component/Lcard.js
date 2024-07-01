@@ -9,7 +9,7 @@ import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices';
 
 const Lcard = () =>{
     return(
-        <>
+        <> 
 <Typography component='div' sx={{width:'100%'}}>
     <Container>
     <Typography component='div' sx={{display:'flex',flexWrap:'wrap'}}>

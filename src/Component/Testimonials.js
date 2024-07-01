@@ -32,7 +32,7 @@ const Testimonials = () =>{
                     </Typography>
                 </Container>
             </Typography>
-            </Typography>
+            </Typography> 
 
             <Typography component='div' sx={{width:{xs:'100%', sm:'100%' ,md:'100%',lg:'50%',xl:'50%'},position:'relative'}} className='cross-two-part2'>
             <img src='https://23july.hostlin.com/easton/wp-content/uploads/2022/04/testimonial-bg-2.jpg'></img>

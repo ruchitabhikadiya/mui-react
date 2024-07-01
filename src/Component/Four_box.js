@@ -37,7 +37,7 @@ const Four_box = () =>{
           <Typography component='div' className='line_four'></Typography>
       </Typography>
     </Typography>
-        </>
+        </> 
     )
 }
 export default Four_box;

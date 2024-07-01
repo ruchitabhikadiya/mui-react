@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 const bull = (
-    <Box
+    <Box 
       component="span"
       sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
     >

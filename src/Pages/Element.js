@@ -295,7 +295,7 @@ const Element = () =>{
     
         </Slider>
       {/* slider 5 end */}
-    </>
+    </> 
     )
 }
 export default Element;

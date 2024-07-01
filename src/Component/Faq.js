@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 
 const Faq = () =>{
     return(
-    <>
+    <> 
     <Typography component='div' sx={{width:'100%',paddingTop:{xs:'40px',sm:'40px',md:'80px',lg:'80px',xl:'80px'},paddingLeft:'0px',paddingRight:'0px'}}>
       <Container>
         <Typography component='div' sx={{width:'100%',display:'flex',flexWrap:'wrap'}}>

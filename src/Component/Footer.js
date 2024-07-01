@@ -5,7 +5,7 @@ import { Container, Grid } from '@mui/material';
 
 const Footer = () =>{
     return(
-        <>
+        <> 
         <Typography component='div' sx={{width:'100%',paddingTop:'67px',paddingBottom:'67px',marginTop:'100px'}} className='footer'>
 
             <Typography component='div' sx={{width:'100%',position:'relative',top:'-120px'}}>

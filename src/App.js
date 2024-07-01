@@ -74,7 +74,7 @@ import Element from './Pages/Element';
 import Page from './Pages/Page';
 import Blog from './Pages/Blog';
 import Contect from './Pages/Contect';
-
+import About from './Pages/About';
 import Testimonials from './Component/Testimonials';
 import React from "react";
 import {
@@ -133,6 +133,10 @@ function App() {
 
         <Route path='/Page'>
           <Page/>
+        </Route>
+
+        <Route path='/About'>
+          <About/>
         </Route>
 
         <Route path='/Element'>
